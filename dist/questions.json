@@ -1,0 +1,737 @@
+[
+    {
+        "question": "Proverbio Veneto: \n'Chi no ga testa, ga gambe.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Chi è testardo va lontano",
+                "correct": false
+            },
+            {
+                "text": "Chi non usa il cervello fatica di più",
+                "correct": true
+            },
+            {
+                "text": "Le persone intelligenti sono pigre",
+                "correct": false
+            },
+            {
+                "text": "Chi non ha la testa, non può usare le gambe",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Napoletano: \n'A gatta frettulosa fece li figlie cecate.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Le gatte partoriscono sempre gattini ciechi",
+                "correct": false
+            },
+            {
+                "text": "La fretta porta sempre a risultati negativi",
+                "correct": true
+            },
+            {
+                "text": "Le gatte sono madri premurose",
+                "correct": false
+            },
+            {
+                "text": "Bisogna fare attenzione quando si corre",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Siciliano: \n'Sita' mbriacari mbriacati di vinu bono.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "In Sicilia si ubriacano tutti con vino buono",
+                "correct": false
+            },
+            {
+                "text": "Se ti imbarchi, imbarcati col vino buono",
+                "correct": false
+            },
+            {
+                "text": "Bisogna ubriacarsi solo con il buon vino",
+                "correct": false
+            },
+            {
+                "text": "Se ti devi ubriacare, ubriacati di vino buono",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Romano: \n'Daje e daje pure li piccioni se fanno quaie.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "I piccioni danno tante cose alle quaglie",
+                "correct": false
+            },
+            {
+                "text": "Dai e dai i piccioni si fanno i guai",
+                "correct": false
+            },
+            {
+                "text": "Prova e riprova anche i piccioni diventano quaglie",
+                "correct": true
+            },
+            {
+                "text": "A Roma i piccioni si chiamano quaglie",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Lombardo: \n'Tre burde fa n'acqua.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "I Navigli sono pieni di acqua",
+                "correct": false
+            },
+            {
+                "text": "Milano ha i bordi umidi",
+                "correct": false
+            },
+            {
+                "text": "Tra i bordi c'è l'acqua",
+                "correct": false
+            },
+            {
+                "text": "Dopo tre nebbie ci sarà una piovuta",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Pugliese: \n'Chesa strétte, fémmena ngegnòuse.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Le donne pugliesi vogliono la casa stretta",
+                "correct": false
+            },
+            {
+                "text": "Casa stretta, donna ingegnosa.",
+                "correct": true
+            },
+            {
+                "text": "In Puglia hanno le case piccole",
+                "correct": false
+            },
+            {
+                "text": "Bisogna avere una casa piccola per avere una donna ingegnosa",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Toscano: \n'Un'è mia facile giudià 'na vacca a giacè!' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Non è facile guidare una mucca da sdraiati",
+                "correct": false
+            },
+            {
+                "text": "Non è facile giudicare una mucca sdraiata",
+                "correct": true
+            },
+            {
+                "text": "Le mucche toscane sono pigre",
+                "correct": false
+            },
+            {
+                "text": "I toscani non sanno riconoscere le mucche",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Ligure: \n'Lontan da-i êuggi lontan da-o chèu.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Lontano dagli occhi lontano dal cuore",
+                "correct": true
+            },
+            {
+                "text": "Lontano da oggi, lontano dal cielo",
+                "correct": false
+            },
+            {
+                "text": "In Liguria abitano tutti lontano",
+                "correct": false
+            },
+            {
+                "text": "La distanza fisica allontana anche i sentimenti",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Bergamasco: \n'Serà fò la stala quando i bö i è scapàcc.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Si fa sera quando i buoni scappano nella stalla",
+                "correct": false
+            },
+            {
+                "text": "La sera sistemo la stalla quando si scapigliano i buoi",
+                "correct": false
+            },
+            {
+                "text": "Prendere precauzioni per evitare danni",
+                "correct": false
+            },
+            {
+                "text": "Chiudere la stalla quando i buoi sono fuggiti",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Bresciano: \n'A Sant'Antonio la nèf al ginöc.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Sant'Antonio fa nevicare",
+                "correct": false
+            },
+            {
+                "text": "A gennaio la neve arriva al ginocchio",
+                "correct": true
+            },
+            {
+                "text": "I santi controllano il tempo",
+                "correct": false
+            },
+            {
+                "text": "A Brescia nevica molto davanti Sant'Antonio",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Bolognese: \n'Du gal in t'un pullar i stan mal.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "A Bologna i pollai sono piccoli",
+                "correct": false
+            },
+            {
+                "text": "I galli bolognesi sono troppo grandi per un pollaio",
+                "correct": false
+            },
+            {
+                "text": "I galli nei pollai bolognesi stanno male",
+                "correct": false
+            },
+            {
+                "text": "Due galli in un solo pollaio stanno male",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Parmigiano: \n'Chi la fa l'aspèta.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Chi fa qualcosa deve aspettare",
+                "correct": false
+            },
+            {
+                "text": "Chi fa del male prima o poi lo subisce",
+                "correct": true
+            },
+            {
+                "text": "La pazienza è una virtù",
+                "correct": false
+            },
+            {
+                "text": "Bisogna aspettare per avere risultati",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Reggiano: \n'Da un pîr a n'è mai nasû un pòm.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Da un pero non è mai nata una mela",
+                "correct": true
+            },
+            {
+                "text": "Da una pira non sale mai al pomeriggio",
+                "correct": false
+            },
+            {
+                "text": "Ogni famiglia ha le proprie caratteristiche",
+                "correct": false
+            },
+            {
+                "text": "Non si può pretendere l'impossibile dalla natura",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Mantovano: \n'Quand la barba la fa bianchin, lasa le done e brasa il vin.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "I mantovani hanno la barba bianca",
+                "correct": false
+            },
+            {
+                "text": "Quando l'imbianchino fa la barba, liscia le donne e cuoci il vino",
+                "correct": false
+            },
+            {
+                "text": "A Mantova le donne preferiscono il vino agli uomini con la barba bianca",
+                "correct": false
+            },
+            {
+                "text": "Quando la barba si fa bianca, lascia le donne e prendi il vino",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Cremonese: \n'Chi gh'àa piàt el bèch, 'l è mìia adàt a i puverèt.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Chi ha caratteristiche sbagliate per un compito",
+                "correct": false
+            },
+            {
+                "text": "Le persone inadatte non possono aiutare gli altri",
+                "correct": false
+            },
+            {
+                "text": "Chi ha il becco piatto, non è adatto ai poveri",
+                "correct": true
+            },
+            {
+                "text": "Chi ha difetti non può essere di aiuto",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Emiliano: \n'Cand l'è 'd Nadél a mezdé, l'è 'd Pasqua a séra.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Natale è a mezzogiorno, Pasqua è la sera",
+                "correct": false
+            },
+            {
+                "text": "Le feste hanno orari diversi",
+                "correct": false
+            },
+            {
+                "text": "Quando a Natale è mezzogiorno, a Pasqua è sera",
+                "correct": true
+            },
+            {
+                "text": "Natale e Pasqua sono collegati",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Piemontese: \n'Chi va a lèt sensa sèina, tüta la neuit së mèina.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Chi va a letto senza cena, si agita tutta la notte",
+                "correct": true
+            },
+            {
+                "text": "Chi va a letto senza cena, fa a botte tutta la notte",
+                "correct": false
+            },
+            {
+                "text": "Chi non dorme va a letto senza cena",
+                "correct": false
+            },
+            {
+                "text": "Chi non si comporta bene non cena",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Ligure: \n'Quande o gatu o n'gh'è, i ratti fan festa.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "I topi sono più furbi dei gatti",
+                "correct": false
+            },
+            {
+                "text": "I gatti proteggono la casa",
+                "correct": false
+            },
+            {
+                "text": "Quando il gatto non c'è, i topi fanno festa",
+                "correct": true
+            },
+            {
+                "text": "Gli animali fanno sempre festa",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Friulano: \n'Cui che al è paron di sè, al è paron di ducj.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Chi è padrone di sé stesso, è padrone di tutti",
+                "correct": true
+            },
+            {
+                "text": "I padroni comandano sempre tutti",
+                "correct": false
+            },
+            {
+                "text": "Bisogna dominare gli altri dominando sé stessi",
+                "correct": false
+            },
+            {
+                "text": "Il controllo di sé è importante per dominare gli altri",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Trevigiano: \n'Quando che piove e che tira vento, i pescatori va a letto.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "I pescatori dormono sempre",
+                "correct": false
+            },
+            {
+                "text": "Il sonno è importante per i pescatori",
+                "correct": false
+            },
+            {
+                "text": "Con il maltempo non si può pescare",
+                "correct": true
+            },
+            {
+                "text": "Il maltempo aiuta i pescatori a dormire",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Vicentino: \n'El tempo e la paja madura i nespoli.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Il tempo e la paglia maturano le nespole",
+                "correct": true
+            },
+            {
+                "text": "La frutta ha bisogno di cure lunghe",
+                "correct": false
+            },
+            {
+                "text": "Le nespole rendono migliore il tempo e la paglia",
+                "correct": false
+            },
+            {
+                "text": "La paglia serve per conservare i cibi",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Marchigiano: \n'A chi nun vò fà fatìa, la terra nun ghe dà granìa.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "A chi non vuole faticare, la terra non dà grano",
+                "correct": true
+            },
+            {
+                "text": "Il grano cresce solo con l'acqua piovana",
+                "correct": false
+            },
+            {
+                "text": "La terra è generosa",
+                "correct": false
+            },
+            {
+                "text": "Bisogna sempre seminare per raccogliere",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Laziale: \n'I gguai da' pila i sa solo 'o coperchio.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Le batterie laziali hanno il coperchio",
+                "correct": false
+            },
+            {
+                "text": "I guai della batteria li sa solo il coperchio",
+                "correct": false
+            },
+            {
+                "text": "Nel Lazio i coperchi portano guai",
+                "correct": false
+            },
+            {
+                "text": "I guai della pentola li sa solo il coperchio",
+                "correct": true
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Abruzzese: \n'La ganga port' la cianca.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "La mascella sostiene la gamba",
+                "correct": true
+            },
+            {
+                "text": "La gamba porta la giacca",
+                "correct": false
+            },
+            {
+                "text": "Le parole hanno effetti concreti",
+                "correct": false
+            },
+            {
+                "text": "Chi parla molto finisce nei guai",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Calabrese: \n'Cu' nascìu tunnu, non po' murìri quadru.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Chi nasce tondo, non può morire quadrato",
+                "correct": true
+            },
+            {
+                "text": "Chi nasce tonno, non può morire quadro",
+                "correct": false
+            },
+            {
+                "text": "La natura non si cambia",
+                "correct": false
+            },
+            {
+                "text": "Bisogna accettarsi per come si è",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Molisano: \n'Prèta che ròciola n'mmétte carpìa.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Prete che rosola non mette la carpa",
+                "correct": false
+            },
+            {
+                "text": "Pietra che rotola non mette muschio",
+                "correct": true
+            },
+            {
+                "text": "Ai preti non piacciono le carpe",
+                "correct": false
+            },
+            {
+                "text": "Le pietre raccolgono muschio solo d'estate",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Napoletano: \n'A lavà la cap au ciocc', pird acqu' e sapon.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Lava la testa al ciuco, prendi acqua e sapone",
+                "correct": false
+            },
+            {
+                "text": "A lavare l'asino, perdi acqua e sapone",
+                "correct": true
+            },
+            {
+                "text": "A lavare la testa al cieco, perdi acqua e sapone",
+                "correct": false
+            },
+            {
+                "text": "A Napoli perdono spesso acqua e sapone",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Valdostano: \n'La neige de mars ne vaut pas un liard.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "La neve di marzo non vale niente",
+                "correct": true
+            },
+            {
+                "text": "Marzo è il mese più freddo",
+                "correct": false
+            },
+            {
+                "text": "La neve primaverile è preziosa",
+                "correct": false
+            },
+            {
+                "text": "I soldi non comprano la neve",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Veronese: \n'Chi magna poenta e latte, campa soto e sora.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Chi mangia polenta e latte vive sopra e sotto terra",
+                "correct": false
+            },
+            {
+                "text": "Chi mangia cibi semplici vive a lungo",
+                "correct": true
+            },
+            {
+                "text": "I cibi tradizionali sono i migliori",
+                "correct": false
+            },
+            {
+                "text": "Polenta e latte durano tanto",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Reatino: \n'A maggio ogni goccia un raggio.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "A maggio ogni goccia di pioggia vale quanto un raggio di sole",
+                "correct": true
+            },
+            {
+                "text": "A maggio piove sempre",
+                "correct": false
+            },
+            {
+                "text": "Il sole di maggio è prezioso",
+                "correct": false
+            },
+            {
+                "text": "A maggio c'è sempre bel tempo",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Viterbese: \n'Chi semina spine, nun se deve scarzà scalzo.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Chi fa del male agli altri non deve poi lamentarsi",
+                "correct": true
+            },
+            {
+                "text": "Bisogna stare attenti quando si cammina",
+                "correct": false
+            },
+            {
+                "text": "Le scarpe proteggono i piedi",
+                "correct": false
+            },
+            {
+                "text": "Chi lavora deve proteggersi",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Anconetano: \n'El marzo pazzerello, guarda el sole e pija l'ombrello.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Marzo è un mese imprevedibile",
+                "correct": true
+            },
+            {
+                "text": "A marzo piove sempre",
+                "correct": false
+            },
+            {
+                "text": "Il sole di marzo è falso",
+                "correct": false
+            },
+            {
+                "text": "A marzo serve sempre l'ombrello",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Campobassano: \n'Cuante cchiu' se fatje, tante cchiu' se magna.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Quanto più si fatica, tanto più si mangia",
+                "correct": true
+            },
+            {
+                "text": "Chi lavora mangia troppo",
+                "correct": false
+            },
+            {
+                "text": "La fatica fa venire fame",
+                "correct": false
+            },
+            {
+                "text": "I lavoratori meritano di più",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Foggiano: \n'Cu' se 'nnammòre de la vedòve, spòse li criàture.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Chi sposa una vedova sposa anche i suoi figli",
+                "correct": true
+            },
+            {
+                "text": "Le vedove hanno sempre figli",
+                "correct": false
+            },
+            {
+                "text": "I bambini vengono prima dell'amore",
+                "correct": false
+            },
+            {
+                "text": "Le seconde nozze sono complicate",
+                "correct": false
+            }
+        ]
+    },
+    {
+        "question": "Proverbio Leccese: \n'Quandu chiove cu' lu sole, se marita la fija de lu diàvulu.' \nCosa significa?",
+        "answers": [
+            {
+                "text": "Quando piove col sole c'è tempo strano",
+                "correct": false
+            },
+            {
+                "text": "Quando piove col sole si sposa la figlia del diavolo",
+                "correct": true
+            },
+            {
+                "text": "Il diavolo controlla il tempo",
+                "correct": false
+            },
+            {
+                "text": "Le nozze portano pioggia",
+                "correct": false
+            }
+        ]
+    }
+]

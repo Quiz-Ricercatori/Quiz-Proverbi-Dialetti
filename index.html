@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="it">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="description" content="Quiz interattivo sui proverbi in dialetto italiano. Metti alla prova la tua conoscenza dei detti popolari regionali.">
+    <meta name="keywords" content="quiz, proverbi, dialetto, italiano, tradizioni, cultura popolare">
+    <meta name="author" content="Quiz Dialetti">
+    <meta name="robots" content="index, follow">
+    
+    
+    <meta property="og:type" content="website">
+    <meta property="og:title" content="Quiz: Proverbi in Dialetto">
+    <meta property="og:description" content="Metti alla prova la tua conoscenza dei proverbi regionali italiani">
+    <meta property="og:locale" content="it_IT">
+    
+    
+    <meta name="twitter:card" content="summary">
+    <meta name="twitter:title" content="Quiz: Proverbi in Dialetto">
+    <meta name="twitter:description" content="Metti alla prova la tua conoscenza dei proverbi regionali italiani">
+    
+    
+    <meta http-equiv="Content-Security-Policy" content="default-src 'self'; script-src 'self'; style-src 'self' 'unsafe-inline' https://fonts.googleapis.com; font-src 'self' https://fonts.gstatic.com; img-src 'self' data:; object-src 'none'; base-uri 'self'; form-action 'self'; frame-ancestors 'none'; upgrade-insecure-requests;">
+    <meta http-equiv="X-Content-Type-Options" content="nosniff">
+    <meta http-equiv="X-Frame-Options" content="DENY">
+    <meta http-equiv="X-XSS-Protection" content="1; mode=block">
+    
+    
+    <link rel="icon" type="image/x-icon" href="favicon.ico">
+    
+    <title>Quiz: Proverbi in Dialetto</title>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Crimson+Text:ital,wght@0,400;0,600;1,400&family=Cinzel:wght@400;600&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+    <header class="site-header">
+        <h1>Proverbi in dialetto</h1>
+    </header>
+    <div class="container" id="app-container">
+        <div class="preferences-toolbar" aria-label="Preferenze di visualizzazione" role="region">
+            <button type="button" id="theme-toggle" aria-pressed="false">Tema Scuro</button>
+            <button type="button" id="contrast-toggle" aria-pressed="false">Alto Contrasto</button>
+            <div class="font-scale-group" role="group" aria-label="Dimensione carattere">
+                <button type="button" id="font-dec" aria-label="Riduci dimensione testo">A-</button>
+                <button type="button" id="font-reset" aria-label="Ripristina dimensione testo">A</button>
+                <button type="button" id="font-inc" aria-label="Aumenta dimensione testo">A+</button>
+            </div>
+            <button type="button" id="print-btn" aria-label="Stampa risultati quiz" disabled>Stampa Risultati</button>
+        </div>
+        <main id="main" aria-live="polite">
+        <div id="start-screen" aria-labelledby="welcome-title">
+            <h2 id="welcome-title">Benvenuto al Quiz</h2>
+            <p>Metti alla prova la tua conoscenza dei proverbi locali.</p>
+            <button id="start-button" disabled aria-describedby="welcome-title">Caricamento...</button>
+        </div>
+        <div id="quiz-screen" class="hidden" aria-labelledby="quiz-title">
+            <div id="question-container">
+                <h2 id="quiz-title" class="sr-only">Quiz in corso</h2>
+                <div id="progress-wrapper" aria-label="Progresso quiz">
+                    <span id="progress-text">Domanda 1 di 10</span>
+                </div>
+                <h2 id="question" role="heading" aria-level="2">Domanda</h2>
+                <div id="answer-buttons" class="btn-grid" role="group" aria-labelledby="question" aria-describedby="question">
+                    
+                </div>
+            </div>
+            <div class="controls">
+                <button id="next-button" class="next-btn hidden" aria-label="Vai alla prossima domanda">Prossima Domanda</button>
+            </div>
+        </div>
+        <div id="result-screen" class="hidden" aria-labelledby="result-title">
+            <h2 id="result-title">Quiz Terminato</h2>
+            <p>Il tuo punteggio finale è: <span id="score" aria-live="polite">0</span></p>
+            
+            <div id="answers-summary" class="answers-summary" role="region" aria-label="Riepilogo delle risposte">
+                
+            </div>
+            
+            <div class="result-buttons" role="group" aria-label="Azioni disponibili">
+                <button id="restart-button" aria-label="Inizia un nuovo quiz">Rigioca</button>
+                <button id="review-button" aria-label="Rivedi le domande e risposte">Revisione</button>
+            </div>
+        </div>
+        
+        <div id="review-screen" class="hidden" aria-labelledby="review-title">
+            <h2 id="review-title">Revisione Quiz</h2>
+            <div class="review-progress" aria-live="polite">
+                <span id="review-counter">1 di 10</span>
+            </div>
+            
+            <div id="review-question-container">
+                <h3 id="review-question" role="heading" aria-level="3">Domanda</h3>
+                <div id="review-answers" class="btn-grid" role="group" aria-labelledby="review-question" aria-describedby="review-counter">
+                    
+                </div>
+            </div>
+            
+            <div class="review-controls" role="group" aria-label="Controlli di navigazione revisione">
+                <button id="review-prev" class="review-btn" aria-label="Vai alla domanda precedente">← Precedente</button>
+                <button id="review-next" class="review-btn" aria-label="Vai alla domanda successiva">Successiva →</button>
+                <button id="review-exit" class="review-btn exit-btn" aria-label="Torna ai risultati del quiz">Torna ai Risultati</button>
+            </div>
+        </div>
+        </main>
+    </div>
+    <div id="notification-region" aria-live="polite" role="status" class="sr-only"></div>
+    <div id="global-progress" aria-hidden="true"><span class="gp-bar" id="global-progress-bar"></span></div>
+    <script src="script.js"></script>
+</body>
+</html>
+
