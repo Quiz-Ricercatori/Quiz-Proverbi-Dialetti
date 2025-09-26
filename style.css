@@ -306,6 +306,18 @@ body {
             rgba(218, 165, 32, 0.02) 201px
         );
 }
+.start-intro .lead-intro { font-size:1.15rem; line-height:1.5; margin:0 0 1.25rem; }
+.quick-facts { list-style:none; padding:0; margin:0 0 1.75rem; display:flex; flex-wrap:wrap; gap:.6rem .9rem; justify-content:center; }
+.quick-facts li { background:var(--accent-color); color:var(--text-color); padding:.4rem .75rem; border-radius:999px; font-size:.78rem; letter-spacing:.5px; font-weight:600; box-shadow: var(--elevation-1); }
+@media (min-width:520px){ .quick-facts li { font-size:.8rem; } }
+.primary-action { min-width: clamp(200px,60%,320px); }
+@media (max-width:600px){
+    #progress-wrapper { position:sticky; top:.5rem; z-index:50; }
+    .container { padding: 1.75rem 1.25rem 2.25rem; }
+    .preferences-toolbar { order:2; }
+    #start-screen h2 { font-size:2rem; }
+    .start-intro .lead-intro { font-size:1.05rem; }
+}
 .site-header {
     width: 100%;
     background: linear-gradient(135deg, var(--header-color) 0%, var(--primary-color) 50%, var(--header-color) 100%);

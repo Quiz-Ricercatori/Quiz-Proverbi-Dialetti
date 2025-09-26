@@ -334,6 +334,7 @@ function startGame() {
     resultScreen.classList.add('hidden');
     reviewScreen.classList.add('hidden');
     quizScreen.classList.remove('hidden');
+    document.body.classList.add('quiz-running');
     selectedQuestions = selectRandomQuestions(allQuestions, 10);
     currentQuestionIndex = 0;
     QuizState.clear();
@@ -343,7 +344,7 @@ function startGame() {
         const firstButton = answerButtonsElement.querySelector('.btn');
         if (firstButton) firstButton.focus();
     }, 100);
-    showNotification('Quiz avviato! Usa le frecce per navigare tra le risposte.', 'success');
+    showNotification('Quiz avviato !', 'success');
 }
 function setNextQuestion() {
     resetState();

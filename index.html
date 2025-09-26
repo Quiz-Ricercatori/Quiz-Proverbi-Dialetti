@@ -2,7 +2,13 @@
 <html lang="it">
 <head>
     <meta charset="UTF-8">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+    <meta name="theme-color" content="#8B4513" media="(prefers-color-scheme: light)">
+    <meta name="theme-color" content="#2A2623" media="(prefers-color-scheme: dark)">
+    <meta name="apple-mobile-web-app-capable" content="yes">
+    <meta name="apple-mobile-web-app-status-bar-style" content="black-translucent">
+    <link rel="apple-touch-icon" sizes="180x180" href="favicon.ico">
+    <link rel="manifest" href="manifest.webmanifest">
     <meta name="description" content="Quiz interattivo sui proverbi in dialetto italiano. Metti alla prova la tua conoscenza dei detti popolari regionali.">
     <meta name="keywords" content="quiz, proverbi, dialetto, italiano, tradizioni, cultura popolare">
     <meta name="author" content="Quiz Dialetti">
@@ -35,10 +41,10 @@
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <header class="site-header">
+    <header class="site-header" role="banner">
         <h1>Proverbi in dialetto</h1>
     </header>
-    <div class="container" id="app-container">
+    <div class="container" id="app-container" data-mobile-root>
         <div class="preferences-toolbar" aria-label="Preferenze di visualizzazione" role="region">
             <button type="button" id="theme-toggle" aria-pressed="false">Tema Scuro</button>
             <button type="button" id="contrast-toggle" aria-pressed="false">Alto Contrasto</button>
@@ -50,10 +56,15 @@
             <button type="button" id="print-btn" aria-label="Stampa risultati quiz" disabled>Stampa Risultati</button>
         </div>
         <main id="main" aria-live="polite">
-        <div id="start-screen" aria-labelledby="welcome-title">
+        <div id="start-screen" aria-labelledby="welcome-title" class="start-intro">
             <h2 id="welcome-title">Benvenuto al Quiz</h2>
-            <p>Metti alla prova la tua conoscenza dei proverbi locali.</p>
-            <button id="start-button" disabled aria-describedby="welcome-title">Caricamento...</button>
+            <p class="lead-intro">Hai appena scansionato il QR? Sei nel posto giusto: inizia e scopri quanto conosci i proverbi regionali italiani.</p>
+            <ul class="quick-facts" aria-label="Caratteristiche del quiz">
+                <li>10 domande casuali</li>
+                <li>1 sola risposta corretta</li>
+                <li>Revisione finale delle risposte</li>
+            </ul>
+            <button id="start-button" disabled aria-describedby="welcome-title" class="primary-action">Caricamento...</button>
         </div>
         <div id="quiz-screen" class="hidden" aria-labelledby="quiz-title">
             <div id="question-container">
