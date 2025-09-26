@@ -588,3 +588,29 @@ if ('serviceWorker' in navigator) {
     }).catch(err => console.warn('SW registration failed', err));
   }
 }
+
+// --- Responsive button adaptation (hide icon when too narrow) ---
+function setupAdaptiveButtons() {
+    const reviewBtn = document.getElementById('review-button');
+    if (!reviewBtn) return;
+    const iconSpan = reviewBtn.querySelector('.btn-icon');
+    const labelSpan = reviewBtn.querySelector('.btn-label');
+    if (!iconSpan || !labelSpan) return;
+    const MIN_SPACE = 36; // px of free space we want to keep icon visible comfortably
+    function evaluate() {
+        // reset to measure natural size with icon
+        reviewBtn.classList.remove('compact');
+        if (iconSpan.offsetParent === null) return; // hidden anyway
+        const free = reviewBtn.clientWidth - reviewBtn.scrollWidth;
+        if (free < MIN_SPACE) {
+            reviewBtn.classList.add('compact');
+        }
+    }
+    const ro = new ResizeObserver(() => evaluate());
+    ro.observe(reviewBtn);
+    window.addEventListener('orientationchange', () => setTimeout(evaluate, 120));
+    // initial after fonts load (adjust for late layout)
+    window.addEventListener('load', () => setTimeout(evaluate, 160));
+    evaluate();
+}
+setupAdaptiveButtons();
