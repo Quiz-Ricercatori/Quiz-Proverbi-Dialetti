@@ -65,6 +65,12 @@ function showNotification(message, type = 'info') {
     if (notificationRegion) {
         notificationRegion.textContent = message;
     }
+    let stack = document.getElementById('notification-stack');
+    if (!stack) {
+        stack = document.createElement('div');
+        stack.id = 'notification-stack';
+        document.body.appendChild(stack);
+    }
     const notification = document.createElement('div');
     notification.className = `notification notification-${type}`;
     notification.setAttribute('role', type === 'error' ? 'alert' : 'status');
@@ -76,8 +82,8 @@ function showNotification(message, type = 'info') {
     closeBtn.addEventListener('click', () => notification.remove());
     notification.appendChild(span);
     notification.appendChild(closeBtn);
-    document.body.appendChild(notification);
-    setTimeout(() => { if (notification.parentElement) notification.remove(); }, 5000);
+    stack.appendChild(notification);
+    setTimeout(() => { if (notification.parentElement) notification.remove(); }, 4500);
 }
 function shuffle(array) {
     const a = [...array];
@@ -406,10 +412,23 @@ function selectAnswer(e) {
     } else {
         showNotification('Risposta sbagliata 😔', 'error');
     }
-    setStatusClass(selectedButton, correct);
-    Array.from(answerButtonsElement.children).forEach(button => {
-        setStatusClass(button, button.dataset.correct === 'true');
-        button.disabled = true;
+    // Apply new coloring logic: only selected correct = green, selected wrong = red, correct answer = green, others neutral
+    const buttons = Array.from(answerButtonsElement.children);
+    buttons.forEach(btn => {
+        btn.disabled = true;
+        btn.classList.remove('correct','wrong','neutral');
+    });
+    if (correct) {
+        selectedButton.classList.add('correct');
+    } else {
+        selectedButton.classList.add('wrong');
+        const realCorrect = buttons.find(b => b.dataset.correct === 'true');
+        if (realCorrect) realCorrect.classList.add('correct');
+    }
+    buttons.forEach(btn => {
+        if (!btn.classList.contains('correct') && !btn.classList.contains('wrong')) {
+            btn.classList.add('neutral');
+        }
     });
     QuizState.save();
     nextButton.classList.remove('hidden');

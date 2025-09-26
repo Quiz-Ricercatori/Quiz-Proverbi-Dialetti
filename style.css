@@ -1113,3 +1113,30 @@ body {
     transform: scale(1.1) !important;
     box-shadow: 0 8px 20px rgba(0, 0, 0, 0.3) !important;
 }
+
+/* === Centered notification stack & refined styles === */
+#notification-stack { position:fixed; top:12px; left:50%; transform:translateX(-50%); width:min(560px,92%); display:flex; flex-direction:column; gap:.75rem; z-index:3000; pointer-events:none; }
+#notification-stack .notification { position:relative; top:auto; right:auto; margin:0; width:100%; pointer-events:auto; border-radius:14px; box-shadow:0 6px 22px rgba(0,0,0,.18),0 2px 6px rgba(0,0,0,.12); backdrop-filter: blur(6px) saturate(1.15); padding:.9rem 1.25rem; font-weight:600; letter-spacing:.35px; }
+#notification-stack .notification-success { background: linear-gradient(135deg,#e4fbe4 0%,#c1f1c7 100%); border:1px solid #34a853; color:#1e6d30; }
+#notification-stack .notification-error { background: linear-gradient(135deg,#ffe7e4 0%,#ffc5be 100%); border:1px solid #d93025; color:#861b12; }
+#notification-stack .notification-info { background: linear-gradient(135deg,#e6f1ff 0%,#c9e1ff 100%); border:1px solid #1b6fd9; color:#144b90; }
+#notification-stack .notification button { background:rgba(255,255,255,.55); }
+#notification-stack .notification button:hover { background:rgba(255,255,255,.8); }
+@media (max-width:560px){ #notification-stack .notification { font-size:.95rem; padding:.85rem 1rem; } }
+
+/* === Answer state refinement after selection === */
+.btn.neutral { background: linear-gradient(135deg,var(--white) 0%, #F5E6D3 100%) !important; border:2px solid var(--accent-color) !important; color:var(--text-color) !important; opacity:.92; }
+.btn.selected-answer { transform:scale(1.08) !important; box-shadow:0 6px 18px rgba(0,0,0,.28) !important; }
+@media (max-width:480px){ .btn.selected-answer { transform:scale(1.04) !important; } }
+
+/* Improve wrapping for very small screens */
+.btn { overflow-wrap:anywhere; word-break:break-word; }
+@media (max-width:420px){
+    #question { font-size:1.25rem; padding:1rem 1.05rem; line-height:1.45; word-break:break-word; }
+    .container { padding:1.5rem 1.05rem 2rem; }
+    .preferences-toolbar { gap:.35rem; }
+}
+@media (max-width:340px){
+    .btn { font-size:.9rem; padding:.85rem .75rem; }
+    #start-button,#next-button,#restart-button { font-size:.95rem; padding:1rem 1.5rem; }
+}
